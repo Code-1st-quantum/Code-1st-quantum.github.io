@@ -195,7 +195,7 @@
   const ipt = document.querySelector('#search-input')
   const btn = document.querySelector('#search-btn')
   const layer = document.querySelector('#search-layer')
-  const posts = JSON.parse(`[{"title":"Test Blog","path":"2022/12/16/Test-Blog/"},{"title":"Hello World","path":"2022/12/16/hello-world/"}]`)
+  const posts = JSON.parse(`[{"title":"Test Blog","path":"2022/12/16/Test-Blog/"},{"title":"Hello World","path":"2022/12/16/hello-world/"},{"title":"USACO2023季度比赛总结","path":"2022/12/18/USACO2023季度比赛总结/"}]`)
   ipt.addEventListener('keyup', e => {
     if (e.key === 'Enter') {
       handleSearch()
@@ -260,7 +260,7 @@
       <div class="main-left--statics">
         <a href="/categories">
           <div>
-            <span>0</span>
+            <span>2</span>
             <span>分类</span>
           </div>
         </a>
@@ -329,7 +329,7 @@
       </h5>
       <p class="main-left--subtitle">
         <span>文章数目：</span>
-        <span>2 篇</span>
+        <span>3 篇</span>
       </p>
       <p class="main-left--subtitle">
         <span>最近动态：</span>
@@ -354,12 +354,16 @@
       <div class="index-article">
         <img class="index-article--cover" src="/imgs/default-cover.webp" alt="">
         <div class="index-article--content">
-          <a href="/2022/12/16/Test-Blog/">Test Blog </a>
+          <a href="/2022/12/18/USACO2023%E5%AD%A3%E5%BA%A6%E6%AF%94%E8%B5%9B%E6%80%BB%E7%BB%93/">USACO2023季度比赛总结 </a>
           <div>
+            
+              <p>
+                <a class="post-category-link" href="/categories/%E6%80%BB%E7%BB%93/">总结</a>
+              </p>
             
             
               <p>
-                <a class="-link" href="/tags/tests/" rel="tag">tests</a>
+                <a class="-link" href="/tags/USACO/" rel="tag">USACO</a>
               </p>
             
           </div>
@@ -373,13 +377,14 @@
   </div>
   <div class="index-right">
     <div class="index-right-wrapper">
-      
-      <ul class="tags" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/tests/" rel="tag">tests</a></li></ul>
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">2022年12月</a><span class="archive-list-count">2</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/tests/">Tests</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%80%BB%E7%BB%93/">总结</a></li></ul>
+      <ul class="tags" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/USACO/" rel="tag">USACO</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">2022年12月</a><span class="archive-list-count">3</span></li></ul>
     </div>
   </div>
 </div>
- </div>
+
+</div>
       <div class="main-right-wrapper"><div class="main-right">
   <div class="main-right--board">
     <div class="main-right--title">

@@ -195,7 +195,7 @@
   const ipt = document.querySelector('#search-input')
   const btn = document.querySelector('#search-btn')
   const layer = document.querySelector('#search-layer')
-  const posts = JSON.parse(`[{"title":"Test Blog","path":"2022/12/16/Test-Blog/"},{"title":"Hello World","path":"2022/12/16/hello-world/"}]`)
+  const posts = JSON.parse(`[{"title":"Test Blog","path":"2022/12/16/Test-Blog/"},{"title":"Hello World","path":"2022/12/16/hello-world/"},{"title":"USACO2023季度比赛总结","path":"2022/12/18/USACO2023季度比赛总结/"}]`)
   ipt.addEventListener('keyup', e => {
     if (e.key === 'Enter') {
       handleSearch()
@@ -260,7 +260,7 @@
       <div class="main-left--statics">
         <a href="/categories">
           <div>
-            <span>0</span>
+            <span>2</span>
             <span>分类</span>
           </div>
         </a>
@@ -329,7 +329,7 @@
       </h5>
       <p class="main-left--subtitle">
         <span>文章数目：</span>
-        <span>2 篇</span>
+        <span>3 篇</span>
       </p>
       <p class="main-left--subtitle">
         <span>最近动态：</span>
@@ -380,13 +380,13 @@ pre:active {
           
           <div class="article-info--categories">
             <span>分类：</span>
-            
+            <a class="category-link" href="/categories/tests/">Tests</a>
           </div>
           
           
           <div class="article-info--tags">
             <span>标签：</span>
-            <a class="tag-link" href="/tags/tests/" rel="tag">tests</a>
+            
           </div>
           
           <p class="article-info--date">日期：2022-12-16 17:57:35</p>
@@ -421,6 +421,11 @@ pre:active {
       </div>
       
         <div class="catelogue catelogue-2">
+          
+            <p>
+              <span>上一篇：</span>
+              <a href="/2022/12/18/USACO2023季度比赛总结/">USACO2023季度比赛总结</a>
+            </p>
            
           
             <p>
