@@ -195,7 +195,7 @@
   const ipt = document.querySelector('#search-input')
   const btn = document.querySelector('#search-btn')
   const layer = document.querySelector('#search-layer')
-  const posts = JSON.parse(`[{"title":"Test Blog","path":"2022/12/16/Test-Blog/"},{"title":"Hello World","path":"2022/12/16/hello-world/"},{"title":"USACO2023季度比赛总结","path":"2022/12/18/USACO2023季度比赛总结/"}]`)
+  const posts = JSON.parse(`[{"title":"Test Blog","path":"2022/12/16/Test-Blog/"},{"title":"USACO2023季度比赛总结","path":"2022/12/18/USACO2023季度比赛总结/"},{"title":"Hello World","path":"2022/12/16/hello-world/"}]`)
   ipt.addEventListener('keyup', e => {
     if (e.key === 'Enter') {
       handleSearch()
@@ -333,11 +333,11 @@
       </p>
       <p class="main-left--subtitle">
         <span>最近动态：</span>
-        <span>今天</span>
+        <span>昨天</span>
       </p>
       <p class="main-left--subtitle">
         <span>上线时间：</span>
-        <span>305天</span>
+        <span>307天</span>
       </p>
       <p class="main-left--subtitle">
         <span>当前版本：</span>
@@ -524,7 +524,7 @@ pre:active {
   }
 
   setOperateItem()
-  const musics = JSON.parse(`[{"name":"安河桥","artist":"宋冬野","url":"http://ting6.yymp3.net:82/new25/songdongye/11.mp3","cover":"https://img2.baidu.com/it/u=1260056724,1076343118&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"},{"name":"卡布达","artist":"暂无","url":"/music/kabuda.mp3","cover":"https://img2.baidu.com/it/u=705831265,2862720033&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"},{"name":"八连杀","artist":"苏三","url":"/music/八连杀.mp3","cover":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo0SWQx6YrNA8lElaG4OOKLkNkNzLO1PflKg&usqp=CAU"}]`)
+  const musics = JSON.parse(`[{"name":"安河桥","artist":"宋冬野","url":"http://ting6.yymp3.net:82/new25/songdongye/11.mp3","cover":"https://img2.baidu.com/it/u=1260056724,1076343118&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"},{"name":"卡布达","artist":"None","url":"/music/kabuda.mp3","cover":"https://img2.baidu.com/it/u=705831265,2862720033&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"},{"name":"八连杀","artist":"苏三","url":"/music/八连杀.mp3","cover":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo0SWQx6YrNA8lElaG4OOKLkNkNzLO1PflKg&usqp=CAU"}]`)
   const ap = new APlayer({
     container: document.querySelector('#aplayer'),
     audio: musics,
